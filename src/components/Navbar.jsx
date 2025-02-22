@@ -1,4 +1,8 @@
+import { useSelector } from "react-redux";
+
 const Navbar = () => {
+  const count = useSelector((state) => state.counter.value);
+  console.log(count);
   return (
     <nav className="shadow-md">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
